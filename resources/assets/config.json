@@ -8,9 +8,9 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/app/themes/elementary",
-  "devUrl": "http://testsite.dev",
-  "proxyUrl": "http://localhost:3000",
+  "publicPath": "http://37.61.232.138/~elementaryco/wp-content/themes/elementary",
+  "devUrl": "http://37.61.232.138/~elementaryco/",
+  "proxyUrl": "",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
     "app/**/*.php",
