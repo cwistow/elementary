@@ -1,0 +1,52 @@
+.entry {
+  .main & {
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+
+    @include media-breakpoint-up(md) {
+      padding: 0 13.5rem;
+      margin-bottom: 9.5rem;
+    }
+
+    & &:first-of-type {
+      margin-top: 2rem;
+
+      @include media-breakpoint-up(md) {
+        margin-top: 9.5rem;
+      }
+    }
+
+    .img-fluid {
+      margin-bottom: 2rem;
+    }
+
+    .title {
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 2.8rem;
+      margin-bottom: 1rem;
+      color: theme-color('secondary');
+
+      @include media-breakpoint-up(md) {
+        font-size: 3.1rem;
+        line-height: 3.6rem;
+        margin-bottom: 1rem;
+      }
+
+      @include media-breakpoint-up(xl) {
+        margin-top: 2.7rem;
+      }
+    }
+
+    .text {
+      font: 400 1.4rem 'Source Sans Pro', sans-serif;
+      line-height: 2rem;
+      color: #4a4a4a;
+
+      @include media-breakpoint-up(md) {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+      }
+    }
+  }
+}

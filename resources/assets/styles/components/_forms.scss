@@ -1,0 +1,61 @@
+/** Search form */
+.search-form {
+  @extend .form-inline;
+}
+
+.search-form label {
+  @extend .form-group;
+
+  font-weight: normal;
+}
+
+.search-form .search-field {
+  @extend .form-control;
+}
+
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-secondary;
+}
+
+form {
+  .main & {
+    text-align: center;
+    max-width: 84rem;
+    padding: 0 2rem;
+    margin: 0 auto !important;
+
+    @include media-breakpoint-up(md) {
+      padding: 0 13.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 2rem;
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea {
+        @extend .default-font;
+
+        width: 100%;
+        padding: 1.4rem 1rem 1.3rem 1rem;
+        border: 0.1rem solid #d4d4d4;
+        border-radius: 0;
+      }
+
+      textarea {
+        height: 12rem;
+        resize: none;
+      }
+    }
+
+    label {
+      color: theme-color('secondary');
+    }
+
+    * {
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.btn {
+  &.btn-primary {
+    @extend .default-font;
+
+    font-weight: 700;
+    background-image: none;
+    background-color: theme-color('button');
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none !important;
+    padding: 1rem 2rem;
+
+    &:hover {
+      background-color: lighten(theme-color('button'), 10%);
+    }
+  }
+
+  &.btn-secondary {
+    @extend .default-font;
+
+    font-weight: 700;
+    background-image: none;
+    background-color: theme-color('tertiary');
+    border-radius: 0;
+    box-shadow: none;
+    outline: none !important;
+    padding: 1.8rem 2rem 1.7rem 2rem;
+  }
+}
+
