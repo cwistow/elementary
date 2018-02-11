@@ -39,14 +39,8 @@
     }
 
     .text {
-      font: 400 1.4rem 'Source Sans Pro', sans-serif;
-      line-height: 2rem;
+      line-height: 2.4rem;
       color: #4a4a4a;
-
-      @include media-breakpoint-up(md) {
-        font-size: 1.6rem;
-        line-height: 2.4rem;
-      }
     }
   }
 }
